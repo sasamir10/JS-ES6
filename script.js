@@ -24,7 +24,7 @@ let num = [...arr, 999, 789];
 arr.push(300);
 
 // console.log(arr);
-// console.log(num);
+console.log(num);
 
 let person = {
     name: "Samir",
@@ -41,4 +41,4 @@ function sum(a, b, c, ...restNum) {
     return a + b + c;
 }
 
-console.log(sum(20, 10, 50, 90, 89));
+// console.log(sum(20, 10, 50, 90, 89));
