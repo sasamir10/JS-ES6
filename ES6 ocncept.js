@@ -1,4 +1,4 @@
-// JS Function
+/* // JS Function
 // problem-1
 function functionName(name) {
     console.log(`Hello, ${name}`);
@@ -111,3 +111,105 @@ console.log(getGrade(79));
 console.log(getGrade(96));
 console.log(getGrade(65));
 console.log(getGrade(49));
+ */
+
+// problem-5
+/* function calculateTotal(price, quantity) {
+    return price * quantity;
+}
+
+// console.log(totalPrice);
+
+function getFinalPrice(totalPrice) {
+    if (totalPrice >= 5000) {
+        return totalPrice - totalPrice * (10 / 100);
+    }
+
+    return totalPrice;
+}
+
+let totalPrice = calculateTotal(400, 40);
+let finalPrice = getFinalPrice(totalPrice);
+
+console.log(finalPrice); */
+
+// more advance
+// problem-1
+/* function checkNumber(number) {
+    if (number > 0) {
+        return "Positive";
+    } else if (number < 0) {
+        return "Negative";
+    }
+
+    return "Zero";
+}
+
+console.log(checkNumber(0));
+
+// problem-2
+function calculateInterest(p, r, t) {
+    return (p * r * t) / 100;
+}
+
+console.log(calculateInterest(500, 5, 2));
+console.log(calculateInterest(10000, 5, 2));
+console.log(calculateInterest(5000, 8, 3));
+
+// problem-3
+function findLargest(a, b, c) {
+    let max = a;
+
+    if (max < b) {
+        max = b;
+    }
+    if (max < c) {
+        max = c;
+    }
+
+    return max;
+}
+
+console.log(findLargest(122, 1022, 902)); */
+
+// problem4
+/* function celsiusToFahrenheit(celsius) {
+    return (celsius * 9) / 5 + 32;
+}
+
+let fahrenheit = celsiusToFahrenheit(20);
+
+console.log(fahrenheit);
+
+function checkTemperature(fahrenheit) {
+    if (fahrenheit >= 86) {
+        return "Hot";
+    } else if (fahrenheit >= 68) {
+        return "Warm";
+    }
+
+    return "Cold";
+}
+
+console.log(checkTemperature(fahrenheit)); */
+
+// problem-5
+function calculateAverage(mark1, mark2, mark3) {
+    return (mark1 + mark2 + mark3) / 3;
+}
+
+let average = calculateAverage(80, 7, 9);
+
+function getResult(average) {
+    if (average >= 80) {
+        return "Excellent";
+    } else if (average >= 60) {
+        return "Good";
+    } else if (average >= 40) {
+        return "Pass";
+    }
+
+    return "Fail";
+}
+
+console.log(getResult(average));
