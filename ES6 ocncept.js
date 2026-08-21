@@ -272,7 +272,7 @@ console.log(getStudentResult(93));
 console.log(getStudentResult(53)); */
 
 // p-6
-const checkNumber = (num) => {
+/* const checkNumber = (num) => {
     if (num > 0) {
         return "Positive";
     } else if (num < 0) {
@@ -322,4 +322,81 @@ const checkPassword = (pass) => {
     return "Weak";
 };
 
-console.log(checkPassword("hello12"));
+console.log(checkPassword("hello12")); */
+
+// level-2
+// p-11
+const findLargest = (a, b, c) => {
+    let max = a;
+
+    if (b > max) {
+        max = b;
+    }
+    if (c > max) {
+        max = c;
+    }
+
+    return max;
+};
+
+console.log(findLargest(203, 70, 452));
+
+// p-12
+const calculateTotal = (price, quantity) => {
+    let totalPrice = price * quantity;
+
+    return totalPrice;
+};
+
+console.log(calculateTotal(900, 5));
+
+// p-13
+const checkUsername = (userName) => {
+    let length = userName.length;
+
+    if (length < 5) {
+        return "Too Short";
+    } else if (length > 15) {
+        return "Too Long";
+    }
+
+    return "Valid Username";
+};
+
+console.log(checkUsername("samir123"));
+
+// p-14
+const calculateBill = (units) => {
+    let unitPrice;
+
+    if (units >= 0 && units <= 100) {
+        unitPrice = 5;
+    } else if (units > 100 && units <= 200) {
+        unitPrice = 7;
+    } else {
+        unitPrice = 10;
+    }
+
+    let totalBill = units * unitPrice;
+
+    return totalBill;
+};
+
+console.log(calculateBill(150));
+
+// p-15
+const calculateGrade = (mark) => {
+    if (mark > 90) {
+        return "A";
+    } else if (mark > 80) {
+        return "B";
+    } else if (mark > 70) {
+        return "C";
+    } else if (mark > 60) {
+        return "D";
+    }
+
+    return "F";
+};
+
+console.log(calculateGrade(91));
