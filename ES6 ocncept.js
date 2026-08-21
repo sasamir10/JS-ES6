@@ -326,7 +326,7 @@ console.log(checkPassword("hello12")); */
 
 // level-2
 // p-11
-const findLargest = (a, b, c) => {
+/* const findLargest = (a, b, c) => {
     let max = a;
 
     if (b > max) {
@@ -386,17 +386,97 @@ console.log(calculateBill(150));
 
 // p-15
 const calculateGrade = (mark) => {
-    if (mark > 90) {
+    if (mark >= 90) {
         return "A";
-    } else if (mark > 80) {
+    } else if (mark >= 80) {
         return "B";
-    } else if (mark > 70) {
+    } else if (mark >= 70) {
         return "C";
-    } else if (mark > 60) {
+    } else if (mark >= 60) {
         return "D";
     }
 
     return "F";
 };
 
-console.log(calculateGrade(91));
+console.log(calculateGrade(91)); */
+
+// level 3
+// p-16
+const createFullName = (firstName, lastName) => {
+    return `${firstName} ${lastName}`;
+};
+
+const fullName = createFullName("Samir", "Ahmed");
+
+const greetUser = (Name) => {
+    return `Hello ${Name}`;
+};
+
+console.log(greetUser(fullName));
+
+// p-17
+const calculateBonus = (salary, percentage) => {
+    const bonus = (salary * percentage) / 100;
+
+    return bonus;
+};
+
+const calculateFinalSalary = (salary, bonus) => {
+    const finalSalary = salary + bonus;
+
+    return finalSalary;
+};
+
+const bonus = calculateBonus(50000, 25);
+
+console.log(calculateFinalSalary(50000, bonus));
+
+// p-18
+const celsiusToFahrenheit = (celsius) => {
+    return (celsius * 9) / 5 + 32;
+};
+
+const ferenhite = celsiusToFahrenheit(20);
+
+const temperatureStatus = (ferenhit) => {
+    if (ferenhit >= 86) {
+        return "Hot";
+    } else if (ferenhit >= 68) {
+        return "Warm";
+    }
+
+    return "Cold";
+};
+
+// console.log(ferenhite);
+console.log(temperatureStatus(ferenhite));
+
+// level-4
+// p-19
+const calculateSum = (numbers) => {
+    let sum = 0;
+
+    for (let i of numbers) {
+        sum += i;
+    }
+
+    return sum;
+};
+
+console.log(calculateSum([10, 20, 30, 40]));
+
+// p-20
+const countEvenNumbers = (numbers) => {
+    let count = 0;
+
+    for (let i of numbers) {
+        if (i % 2 === 0) {
+            count++;
+        }
+    }
+
+    return count;
+};
+
+console.log(countEvenNumbers([10, 15, 22, 31, 401]));
