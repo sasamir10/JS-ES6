@@ -193,7 +193,7 @@ function checkTemperature(fahrenheit) {
 
 console.log(checkTemperature(fahrenheit)); */
 
-// problem-5
+/* // problem-5
 function calculateAverage(mark1, mark2, mark3) {
     return (mark1 + mark2 + mark3) / 3;
 }
@@ -212,4 +212,114 @@ function getResult(average) {
     return "Fail";
 }
 
-console.log(getResult(average));
+console.log(getResult(average)); */
+
+// Arrow Function
+// p-1
+/* const squareNumber = (number) => {
+    return number * number;
+};
+
+console.log(squareNumber(8));
+
+// p-2
+const checkEvenOdd = (num) => {
+    if (num % 2 === 0) {
+        return "Even";
+    }
+
+    return "Odd";
+};
+
+console.log(checkEvenOdd(9));
+console.log(checkEvenOdd(18));
+console.log(checkEvenOdd(91));
+
+// p-3
+const findLarger = (a, b) => {
+    if (a > b) {
+        return a;
+    }
+
+    return b;
+};
+
+console.log(findLarger(782, 90));
+
+// p-4
+const calculateDiscount = (price, discount) => {
+    return price - (price * discount) / 100;
+};
+
+console.log(calculateDiscount(200, 50));
+
+// p-5
+
+const getStudentResult = (mark) => {
+    if (mark >= 80) {
+        return "Excellent";
+    } else if (mark >= 60) {
+        return "Good";
+    } else if (mark >= 40) {
+        return "Pass";
+    }
+
+    return "Fail";
+};
+
+console.log(getStudentResult(23));
+console.log(getStudentResult(93));
+console.log(getStudentResult(53)); */
+
+// p-6
+const checkNumber = (num) => {
+    if (num > 0) {
+        return "Positive";
+    } else if (num < 0) {
+        return "Negative";
+    }
+
+    return "Zero";
+};
+
+console.log(checkNumber(0));
+
+// p-7
+const calculateAge = (birthYear, currentYear) => {
+    return currentYear - birthYear;
+};
+
+console.log(calculateAge(1998, 2056));
+
+// p-8
+const canVote = (age) => {
+    if (age >= 18) {
+        return "Eligible";
+    }
+
+    return "Not Eligible";
+};
+
+console.log(canVote(6));
+
+// p-9
+const calculateArea = (length, width) => {
+    let area = length * width;
+
+    return area;
+};
+
+console.log(calculateArea(10, 5));
+
+// p-10
+const checkPassword = (pass) => {
+    let passLength = pass.length;
+
+    if (passLength >= 8) {
+        return "Strong";
+    }
+
+    return "Weak";
+};
+
+console.log(checkPassword("hello12"));
