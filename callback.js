@@ -10,11 +10,9 @@ const runFunction = (callback) => {
 console.log(runFunction(sayHello)); */
 
 // p-1
-const sayHello = () => {
+/* const sayHello = () => {
     return "Hello";
 };
-
-// console.log(sayHello());
 
 const runCallback = (callback) => {
     return callback();
@@ -88,3 +86,146 @@ const calculateNumbers = (a, b, callback) => {
 
 console.log(calculateNumbers(10, 5, add));
 console.log(calculateNumbers(10, 5, multiply));
+ */
+
+// level-2
+//p-1 - Format a Name
+/* const makeUpperCase = (name) => {
+    return name.toUpperCase();
+};
+
+const formatName = (name, callback) => {
+    return callback(name);
+};
+
+console.log(formatName("samir", makeUpperCase));
+
+// p-2 - Check Age with Callback
+const checkAdult = (age) => {
+    if (age >= 18) {
+        return "Adult";
+    }
+
+    return "Minor";
+};
+
+const processAge = (age, backCall) => {
+    return backCall(age);
+};
+
+console.log(processAge(7, checkAdult));
+
+// p-3 - Calculate Discount with Callback
+const tenPercentDiscount = (price) => {
+    return price - (price * 10) / 100;
+};
+
+const twentyPercentDiscount = (price) => {
+    return price - (price * 20) / 100;
+};
+
+const calculatePrice = (price, callBack) => {
+    return callBack(price);
+};
+
+console.log(calculatePrice(1000, tenPercentDiscount));
+console.log(calculatePrice(1000, twentyPercentDiscount));
+
+// p-4 - Two Numbers + Result Checker
+const addNumbers = (a, b) => {
+    return a + b;
+};
+
+const multiplyNumbers = (a, b) => {
+    return a * b;
+};
+
+const processNumbers = (a, b, callback) => {
+    return callback(a, b);
+};
+
+console.log(processNumbers(8, 4, addNumbers));
+console.log(processNumbers(8, 4, multiplyNumbers));
+
+// p-5 - Callback Inside a Loop
+const printNumber = (number) => {
+    console.log(number);
+};
+
+const processArray = (numbers, callback) => {
+    for (let number of numbers) {
+        callback(number);
+    }
+};
+
+processArray([10, 20, 30], printNumber); */
+
+// level-3
+// p-1 - Greet With an Inline Callback
+const processName = (name, callback) => {
+    return callback(name);
+};
+
+const callbackResult = processName("Samir", (names) => {
+    return `Hello ${names}`;
+});
+
+console.log(callbackResult);
+
+// p-2 - Double a Number Inline
+const processNumber = (number, callback) => {
+    return callback(number);
+};
+
+const result = processNumber(5, (num) => {
+    return num * num;
+});
+
+console.log(result);
+
+// p-3 - Check Even or Odd Inline
+const checkValue = (number, callback) => {
+    return callback(number);
+};
+
+const res = checkValue(894, (num) => {
+    if (num % 2 === 0) {
+        return "Even";
+    }
+
+    return "Odd";
+});
+
+console.log(res);
+
+// p-4 - Custom Calculator
+const calculate = (x, y, callback) => {
+    return callback(x, y);
+};
+
+const add = calculate(5, 8, (num1, num2) => {
+    return num1 + num2;
+});
+
+const sub = calculate(50, 35, (num1, num2) => {
+    return num1 - num2;
+});
+
+const mul = calculate(6, 4, (num1, num2) => {
+    return num1 * num2;
+});
+
+console.log(add);
+console.log(sub);
+console.log(mul);
+
+// p-5 - Process Every Array Item
+const processArray = (arr, callback) => {
+    return callback(arr);
+};
+
+const arrPrint = processArray([10, 20, 30], (arr) => {
+    for (let number of arr) {
+        // BUJHTESINA..will be back
+    }
+});
